@@ -1,5 +1,4 @@
 * {
-    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -7,23 +6,51 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.header {
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
 .google_img {
     height: 50%;
-    width: 50%;
+    width: 100%;
     padding-top: 13%;
+}
+
+.formsub {
+    width: 560px;
 }
 
 .searchbar {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border: 1px solid #e0dede;
     border-radius: 50px;
-    width: 560px;
+    /* width: 560px; */
     height: 41px;
     margin: 20px;
     padding: 0px 8px 0px 14px;
     align-items: center;
     justify-content: space-between;
+}
+
+.searchbar:hover {
+    box-shadow: 0 0 0 1px rgb(206, 203, 203),
+    0 0 0 1px rgb(194, 192, 192),
+    0 0 0 1px rgb(211, 208, 208),
+    0 0 0 3px rgb(240, 237, 237);
+    border: none;
 }
 
 .searchbar input {
@@ -41,14 +68,30 @@ body {
     flex-direction: row;
     justify-content: center;
     column-gap: 10px;
+    padding-top: 5px;
 }
 
 .subbutton input {
     height: 36px;
     border: none;
+    font-size: 1rem;
+    font-weight: 200px;
+    color: rgb(29, 28, 28);
     background-color: white;
 }
 
-/* .subbutton input:hover [
-    sha
-] */
+.subbutton input:hover {
+    box-shadow: 0 0 0 1px rgb(206, 203, 203),
+    0 0 0 1px rgb(194, 192, 192),
+    0 0 0 1px rgb(211, 208, 208),
+    0 0 0 3px rgb(240, 237, 237);
+    border: none;
+    border-radius: 5px;
+}
+
+@media (orientation: portrait) {
+   .formsub {
+    margin: 0px 2vw 0px 2vw;
+    width: auto;
+   }
+}
