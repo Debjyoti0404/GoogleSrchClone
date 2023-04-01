@@ -87,9 +87,8 @@
 
 .subbutton input:hover {
     box-shadow: 0 0 0 1px rgb(206, 203, 203),
-    0 0 0 1px rgb(194, 192, 192),
-    0 0 0 1px rgb(211, 208, 208),
-    0 0 0 3px rgb(240, 237, 237);
+    0 0 0 1px rgb(194, 192, 192);
+    background-color: #F8F9FA;
     border: none;
     border-radius: 5px;
 }
